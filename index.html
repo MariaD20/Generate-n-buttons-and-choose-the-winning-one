@@ -1,0 +1,28 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Guess the button - choose from n buttons</title>
+  </head>
+  <body>
+    <center>
+      <h1>Guess the button - choose from n buttons</h1>
+        <div class="generateButtons">
+          <label for="inputButtonsNo" style="color:blue;font-size:26px;">Please type the number of buttons to choose from:</label>
+          <br><br>
+          <input id="inputButtonsNo" placeholder="Enter a number" type="number", style="color:blue;font-size:16px;"></input>
+          <br><br>
+          <button onclick="generateButtons()">Generate buttons</button>
+          <br><br><br>
+          <p id="displayAllButtons"></p>
+          <p id="message" style="color:blue;font-size:19px;">
+            Once the buttons have been generated, please select one and we will see how lucky you are today!
+          </p>
+        </div>
+    </center>
+    <script src="index.js"></script>
+  </body>
+</html>
